@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32F303C8Tx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F3xx_DFP.2.2.0</PackID>
+          <PackID>Keil.STM32F3xx_DFP.2.2.1</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00003000) IROM(0x08000000,0x00010000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -456,7 +456,7 @@
       <file attr="config" category="source" condition="STM32F303x8 ARMCC" name="Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303x8.s" version="2.3.3">
         <instance index="0">RTE\Device\STM32F303C8Tx\startup_stm32f303x8.s</instance>
         <component Cbundle="Standalone" Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 CMSIS"/>
-        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.1"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
@@ -464,7 +464,7 @@
       <file attr="config" category="header" name="MDK\Templates\Inc\stm32f3xx_hal_conf.h" version="1.11.2">
         <instance index="0">RTE\Device\STM32F303C8Tx\stm32f3xx_hal_conf.h</instance>
         <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="COMMON" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 STARTUP CORTEX GPIO RCC FLASH"/>
-        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.1"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
@@ -472,7 +472,7 @@
       <file attr="config" category="source" name="Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c" version="2.3.2">
         <instance index="0">RTE\Device\STM32F303C8Tx\system_stm32f3xx.c</instance>
         <component Cbundle="Standalone" Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 CMSIS"/>
-        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.1"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
         </targetInfos>
