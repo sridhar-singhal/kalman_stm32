@@ -1,9 +1,72 @@
 #include "stm32f303x8.h"
+#include "stm32f3xx.h" //This contains all the NVIC stuff. Remeber
 #include "arm_math.h"
+//#include "stm32f3xx_ll_utils.h"
+//#include "misc.h"
+#include "core_cm4.h"
 
 using namespace std;
 //Matrix Initializations
 //https://stackoverflow.com/questions/58645727/arm-math-matrix-multiplication-hardfault 
+//https://www.eevblog.com/forum/microcontrollers/using-matrix-multiplication-function-of-cmsis-dsp-library-for-stm32discovery/
+
+//Timer
+//https://deepbluembedded.com/stm32-timer-interrupt-hal-example-timer-mode-lab/
+//Timer calculations: https://www.emcu-homeautomation.org/stm32-basic-timer-in-interrupt-pwm-mode/
+//Using Timer: https://visualgdb.com/tutorials/arm/stm32/timers/ 
+//A problem in timer might occur:
+//https://developer.arm.com/documentation/ka003795/latest
+//https://electronics.stackexchange.com/questions/439873/timer-interrupt-on-stm32f303
+//A link which uses only CMSIS and not ST's libraries: 
+	//https://www.eng.auburn.edu/~nelsovp/courses/elec3040_3050/LabLectures/ELEC30x0%20Lab4%20Interrupts.pdf
+typedef struct
+{
+  uint8_t NVIC_IRQChannel;                    /*!< Specifies the IRQ channel to be enabled or disabled.
+                                                   This parameter can be a value of @ref IRQn_Type 
+                                                   (For the complete STM32 Devices IRQ Channels list, please
+                                                    refer to stm32f37x.h file) */
+
+  uint8_t NVIC_IRQChannelPreemptionPriority;  /*!< Specifies the pre-emption priority for the IRQ channel
+                                                   specified in NVIC_IRQChannel. This parameter can be a value
+                                                   between 0 and 15 as described in the table @ref NVIC_Priority_Table
+                                                   A lower priority value indicates a higher priority */
+
+  uint8_t NVIC_IRQChannelSubPriority;         /*!< Specifies the subpriority level for the IRQ channel specified
+                                                   in NVIC_IRQChannel. This parameter can be a value
+                                                   between 0 and 15 as described in the table @ref NVIC_Priority_Table
+                                                   A lower priority value indicates a higher priority */
+
+  FunctionalState NVIC_IRQChannelCmd;         /*!< Specifies whether the IRQ channel defined in NVIC_IRQChannel
+                                                   will be enabled or disabled. 
+                                                   This parameter can be set either to ENABLE or DISABLE */   
+} NVIC_InitTypeDef;
+
+
+//Name of the Timer 2 Interrupt handler as defined in the Vector interrup table in startup_stm32f303x8.s
+//void TIM2_IRQHandler()
+//{
+	//get_vals();
+	
+//}
+
+
+void EnableTimerInterrupt()
+{
+    //NVIC_InitTypeDef nvicStructure;
+    //nvicStructure.NVIC_IRQChannel = TIM2_IRQn;
+    //nvicStructure.NVIC_IRQChannelPreemptionPriority = 0;
+    //nvicStructure.NVIC_IRQChannelSubPriority = 1;
+    //nvicStructure.NVIC_IRQChannelCmd = ENABLE;
+    //NVIC_Init(&nvicStructure);
+	
+
+	NVIC_EnableIRQ(TIM2_IRQn); //Timer 2 is enabled
+	NVIC_SetPriority(TIM2_IRQn, 1); //Timer 2 priority is set to 1, highest is 0. 
+	
+	
+}
+
+
 int main()
 {	
 	uint16_t rows = 4;

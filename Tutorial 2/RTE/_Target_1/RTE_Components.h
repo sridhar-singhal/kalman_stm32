@@ -20,12 +20,24 @@
 #define RTE_DEVICE_HAL_COMMON
 /* Keil.Standalone::Device:STM32Cube HAL:CORTEX:1.11.2 */
 #define RTE_DEVICE_HAL_CORTEX
+/* Keil.Standalone::Device:STM32Cube HAL:DMA:1.11.2 */
+#define RTE_DEVICE_HAL_DMA
+/* Keil.Standalone::Device:STM32Cube HAL:EXTI:1.11.2 */
+#define RTE_DEVICE_HAL_EXTI
 /* Keil.Standalone::Device:STM32Cube HAL:FLASH:1.11.2 */
 #define RTE_DEVICE_HAL_FLASH
 /* Keil.Standalone::Device:STM32Cube HAL:GPIO:1.11.2 */
 #define RTE_DEVICE_HAL_GPIO
+/* Keil.Standalone::Device:STM32Cube HAL:HRTIM:1.11.2 */
+#define RTE_DEVICE_HAL_HRTIM
+/* Keil.Standalone::Device:STM32Cube HAL:I2C:1.11.2 */
+#define RTE_DEVICE_HAL_I2C
 /* Keil.Standalone::Device:STM32Cube HAL:RCC:1.11.2 */
 #define RTE_DEVICE_HAL_RCC
+/* Keil.Standalone::Device:STM32Cube HAL:SPI:1.11.2 */
+#define RTE_DEVICE_HAL_SPI
+/* Keil.Standalone::Device:STM32Cube HAL:TIM:1.11.2 */
+#define RTE_DEVICE_HAL_TIM
 /* Keil.Standalone::Device:Startup:1.11.2 */
 #define RTE_DEVICE_STARTUP_STM32F3XX    /* Device Startup for STM32F3 */
 

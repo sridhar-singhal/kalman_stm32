@@ -1,5 +1,5 @@
-./objects/stm32f3xx_hal_cortex.o: \
-  D:\Program\ Files\Keil\MDK5\ Packs\Keil\STM32F3xx_DFP\2.2.0\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_cortex.c \
+./objects/stm32f3xx_hal_i2c.o: \
+  D:\Program\ Files\Keil\MDK5\ Packs\Keil\STM32F3xx_DFP\2.2.0\Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_i2c.c \
   RTE\_Target_1\Pre_Include_Global.h \
   D:\Program\ Files\Keil\MDK5\ Packs\Keil\STM32F3xx_DFP\2.2.0\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_hal.h \
   RTE\Device\STM32F303C8Tx\stm32f3xx_hal_conf.h \

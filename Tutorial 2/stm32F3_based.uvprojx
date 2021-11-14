@@ -388,6 +388,16 @@
               <FileType>8</FileType>
               <FilePath>.\main.cpp</FilePath>
             </File>
+            <File>
+              <FileName>misc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\misc.h</FilePath>
+            </File>
+            <File>
+              <FileName>vals.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\vals.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -427,6 +437,18 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="DMA" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="EXTI" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="FLASH" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL">
         <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
         <targetInfos>
@@ -439,7 +461,31 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="HRTIM" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL DMA">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="I2C" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL DMA">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
       <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="RCC" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="SPI" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL DMA">
+        <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
+        <targetInfos>
+          <targetInfo name="Target 1"/>
+        </targetInfos>
+      </component>
+      <component Cbundle="Standalone" Cclass="Device" Cgroup="STM32Cube HAL" Csub="TIM" Cvendor="Keil" Cversion="1.11.2" condition="STM32F3 HAL DMA">
         <package name="STM32F3xx_DFP" schemaVersion="1.7.2" url="http://www.keil.com/pack/" vendor="Keil" version="2.2.0"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
