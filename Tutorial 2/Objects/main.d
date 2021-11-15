@@ -79,4 +79,7 @@
   D:\Program\ Files\Keil\MDK5\ Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\complex_math_functions.h \
   D:\Program\ Files\Keil\MDK5\ Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\filtering_functions.h \
   D:\Program\ Files\Keil\MDK5\ Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h \
-  D:\Program\ Files\Keil\MDK5\ Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\quaternion_math_functions.h
+  D:\Program\ Files\Keil\MDK5\ Packs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\quaternion_math_functions.h \
+  vals.h \
+  D:\Program\ Files\Keil\MDK5\ Packs\Keil\STM32F3xx_DFP\2.2.0\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_tim.h \
+  D:\Program\ Files\Keil\MDK5\ Packs\Keil\STM32F3xx_DFP\2.2.0\Drivers\STM32F3xx_HAL_Driver\Inc\stm32f3xx_ll_rcc.h

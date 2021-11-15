@@ -29,7 +29,7 @@ Project File Date:  11/14/2021
 Build target 'Target 1'
 compiling main.cpp...
 linking...
-Program Size: Code=2108 RO-data=472 RW-data=0 ZI-data=1632  
+Program Size: Code=2288 RO-data=488 RW-data=4 ZI-data=1652  
 FromELF: creating hex file...
 ".\Objects\binary.axf" - 0 Error(s), 0 Warning(s).
 
@@ -57,6 +57,11 @@ Package Vendor: Keil
    * Component: RCC Version: 1.11.2
    * Component: SPI Version: 1.11.2
    * Component: TIM Version: 1.11.2
+   * Component: COMMON Version: 1.11.2
+   * Component: PWR Version: 1.11.2
+   * Component: RCC Version: 1.11.2
+   * Component: TIM Version: 1.11.2
+   * Component: UTILS Version: 1.11.2
    * Component: Startup Version: 1.11.2
 
 <h2>Collection of Component include folders:</h2>
@@ -156,12 +161,32 @@ Package Vendor: Keil
       Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim.c
       Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_hal_tim_ex.c
 
+   * Component: Keil.Standalone::Device:STM32Cube LL:COMMON:1.11.2
+      Include file:  MDK\Templates_LL\Inc\stm32_assert.h
+      Source file:   MDK\Driver\stm32f3xx_ll.c
+      Include file:  MDK\Templates_LL\Inc\stm32f3xx_it.h
+      Source file:   MDK\Templates_LL\Src\stm32f3xx_it.c
+      Include file:  MDK\Templates_LL\Inc\main.h
+      Source file:   MDK\Templates_LL\Src\main.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:PWR:1.11.2
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_pwr.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:RCC:1.11.2
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_rcc.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:TIM:1.11.2
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_tim.c
+
+   * Component: Keil.Standalone::Device:STM32Cube LL:UTILS:1.11.2
+      Source file:   Drivers\STM32F3xx_HAL_Driver\Src\stm32f3xx_ll_utils.c
+
    * Component: Keil.Standalone::Device:Startup:1.11.2
       Include file:  Drivers\CMSIS\Device\ST\STM32F3xx\Include\stm32f3xx.h
       Source file:   MDK\Device\Source\ARM\STM32F3xx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\system_stm32f3xx.c
       Source file:   Drivers\CMSIS\Device\ST\STM32F3xx\Source\Templates\arm\startup_stm32f303x8.s
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

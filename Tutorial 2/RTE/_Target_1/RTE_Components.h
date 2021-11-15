@@ -38,6 +38,17 @@
 #define RTE_DEVICE_HAL_SPI
 /* Keil.Standalone::Device:STM32Cube HAL:TIM:1.11.2 */
 #define RTE_DEVICE_HAL_TIM
+/* Keil.Standalone::Device:STM32Cube LL:COMMON:1.11.2 */
+#define RTE_DEVICE_LL_DRIVERS_USED
+          #define RTE_DEVICE_LL_COMMON
+/* Keil.Standalone::Device:STM32Cube LL:PWR:1.11.2 */
+#define RTE_DEVICE_LL_PWR
+/* Keil.Standalone::Device:STM32Cube LL:RCC:1.11.2 */
+#define RTE_DEVICE_LL_RCC
+/* Keil.Standalone::Device:STM32Cube LL:TIM:1.11.2 */
+#define RTE_DEVICE_LL_TIM
+/* Keil.Standalone::Device:STM32Cube LL:UTILS:1.11.2 */
+#define RTE_DEVICE_LL_UTILS
 /* Keil.Standalone::Device:Startup:1.11.2 */
 #define RTE_DEVICE_STARTUP_STM32F3XX    /* Device Startup for STM32F3 */
 
