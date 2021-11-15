@@ -45,8 +45,8 @@ title("GPS");
 
 n_x = wgn(length(t),1,10);
 %n_y = wgn
-ax_n = ax + wgn(length(t),1,20);
-ay_n = ay + wgn(length(t),1,20);
+ax_n = ax + wgn(length(t),1,10);
+ay_n = ay + wgn(length(t),1,10);
 
 figure()
 plot(ax_n);
