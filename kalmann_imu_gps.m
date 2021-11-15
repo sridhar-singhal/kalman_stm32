@@ -50,6 +50,10 @@ ay_n = ay + wgn(length(t),1,10);
 
 figure()
 plot(ax_n);
+title("Ax");
+figure();
+plot(ay_n);
+title("Ay");
 
 x_gps_n = x_gps + wgn(length(t),1,1);
 y_gps_n = y_gps + wgn(length(t),1,1);
