@@ -27,12 +27,27 @@ using namespace std;
 //https://developer.arm.com/documentation/ka003795/latest
 //https://electronics.stackexchange.com/questions/439873/timer-interrupt-on-stm32f303
 
+//https://stm32f4-discovery.net/2015/06/how-to-properly-enabledisable-interrupts-in-arm-cortex-m/
+//https://stackoverflow.com/questions/42770741/nvic-interrupt-not-working-on-stm32f103
+//https://www.keil.com/pack/doc/CMSIS/Core/html/group__NVIC__gr.html
+//https://greenwaves-technologies.com/manuals/BUILD/FREERTOS/html/group__CMSIS__Core__NVICFunctions.html#ga57b3064413dbc7459d9646020fdd8bef
+
+
+
 //A link which uses only CMSIS and not ST's libraries for interrupts: 
 	//https://www.eng.auburn.edu/~nelsovp/courses/elec3040_3050/LabLectures/ELEC30x0%20Lab4%20Interrupts.pdf
 //A list of NVIC functions present in ARM, not ST built special functions
 	//https://greenwaves-technologies.com/manuals/BUILD/FREERTOS/html/group__CMSIS__Core__NVICFunctions.html#ga57b3064413dbc7459d9646020fdd8bef
 	//https://www.keil.com/pack/doc/CMSIS/Core/html/group__NVIC__gr.html
 //These functions can be found in core_cm4.h
+
+//https://electronics.stackexchange.com/questions/439873/timer-interrupt-on-stm32f303 
+//https://www.emcu-homeautomation.org/stm32-basic-timer-in-interrupt-pwm-mode/
+//https://stackoverflow.com/questions/43059223/programming-nvic-on-stm32-without-libraries
+
+//Debugging:
+//https://www.youtube.com/watch?v=JTb2mv60eNQ 
+
 
 
 float ax, ay,gps_x,gps_y;
